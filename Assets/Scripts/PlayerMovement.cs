@@ -22,7 +22,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float velocityX = 7f;
     [SerializeField] private LayerMask jumpableGround;
 
-    // Start is called before the first frame update
     private void Start()
     {
         Debug.Log("Player Movement Start debug");
@@ -32,7 +31,6 @@ public class PlayerMovement : MonoBehaviour
         coll = GetComponent<BoxCollider2D>();
     }
 
-    // Update is called once per frame
     private void Update()
     {
         dirX = Input.GetAxis("Horizontal");
